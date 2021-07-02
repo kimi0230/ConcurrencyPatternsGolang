@@ -1,4 +1,6 @@
 # pipeline
+pipeline 當你的程序需要流動式或批次處理時, 可以相互獨立的修改每個 stage. 
+混合搭配 stage 組出一個新的數據流, 而無需修改 stage
 
 ## [additional stage to pipeline](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/pipeline/additional-stage-to-pipeline.go)
 分離每個 stage, 一步一步將每個 function 回傳值帶入下一個 function.
