@@ -6,6 +6,7 @@ import (
 
 /*
 特定約束
+可看到 loopData 和 handleData channel 上的循環都可以使用 int slice 的 data
 */
 func main() {
 	data := make([]int, 4)
