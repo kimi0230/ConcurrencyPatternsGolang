@@ -9,5 +9,5 @@ https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/
 3. [preventing goroutine leaks](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/preventing-goroutine-leaks)
 4. [the or channel](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/the-or-channel)
 5. [error handling](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/error-handling)
-6. [pipelines](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/pipelines)
-7. []()
+6. [pipeline](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/pipeline)
+7. [fan-out / fan-in](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/fan-out-fan-in)
