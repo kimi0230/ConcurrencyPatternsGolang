@@ -1,9 +1,7 @@
 package fanoutfanin
 
 import (
-	"fmt"
 	"math/rand"
-	"time"
 )
 
 // 重複調用function的生成器
@@ -22,7 +20,7 @@ func repeatFn(done <-chan interface{}, fn func() interface{}) <-chan interface{}
 	return valueStream
 }
 
-// take: 將傳入的 channel 的值寫入 takeStream, 取出前 num個項目, 並回傳
+// take: 將傳入的 channel 的值寫入 takeStream, 取出前 num 個項目, 並回傳
 func take(done <-chan interface{}, valueStream <-chan interface{}, num int) <-chan interface{} {
 	takeStream := make(chan interface{})
 	go func() {
@@ -89,19 +87,19 @@ func primeFinder(done <-chan interface{}, intStream <-chan int) <-chan interface
 	return primeStream
 }
 
-func naivePrimeFinder() {
+func naivePrimeFinder() []int {
 	rand := func() interface{} { return rand.Intn(50000000) }
 
 	done := make(chan interface{})
 	defer close(done)
 
-	start := time.Now()
-
+	// 一個 goroutine 產生亂數int
 	randIntStream := toInt(done, repeatFn(done, rand))
-	fmt.Println("Primes:")
-	for prime := range take(done, primeFinder(done, randIntStream), 5) {
-		fmt.Printf("\t%d\n", prime)
-	}
+	result := []int{}
 
-	fmt.Printf("Search took: %v", time.Since(start))
+	// 將傳入的 channel 的值寫入 takeStream, 取出前 num 個項目, 並回傳
+	for prime := range take(done, primeFinder(done, randIntStream), 10) {
+		result = append(result, prime.(int))
+	}
+	return result
 }
