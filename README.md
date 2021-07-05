@@ -17,3 +17,7 @@ https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/
 09. [the tee channel](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/the-tee-channel)
 10. [queuing](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/queuing)
 11. [the context package](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/the-context-package)
+
+## Resource
+* https://github.com/kat-co/concurrency-in-go-src
+* https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-context/
