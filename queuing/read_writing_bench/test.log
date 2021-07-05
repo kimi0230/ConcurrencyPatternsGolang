@@ -1,0 +1,63 @@
+time="2020-04-16T16:14:50+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:15:34+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:15:35+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:15:37+08:00" level=info msg="{Data:{FeederSettingView:{Id:0 DidNo: UserID:0 DeviceName: AudioEnable: AudioVolume: LightEnable: LightStartTime: LightEndTime: TimeZone: WifiSSID: BluetoothAddr: FeederMappingID:0 RingID:0 RingName: BuiltIn: FeedAmount: PetID:0 PetName: SerialNo: Firmware: Dmid:0 LastVersion: IsOnline:} RedPoint:false} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:}" method=GET request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:17:05+08:00" level=info msg="{Data:{FeederSettingView:{Id:0 DidNo: UserID:0 DeviceName: AudioEnable: AudioVolume: LightEnable: LightStartTime: LightEndTime: TimeZone: WifiSSID: BluetoothAddr: FeederMappingID:0 RingID:0 RingName: BuiltIn: FeedAmount: PetID:0 PetName: SerialNo: Firmware: Dmid:0 LastVersion: IsOnline:} RedPoint:false} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:}" method=GET request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:17:10+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:17:10+08:00" level=info msg="{Data:{API_once_pw:} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:}" method=GET request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:17:21+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:17:23+08:00" level=info msg="{Data:{API_once_pw:} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:}" method=GET request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:17:43+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:17:44+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:17:49+08:00" level=info msg="{Data:{API_once_pw:} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:}" method=GET request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:18:00+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:18:02+08:00" level=info msg="{Data:{API_once_pw:} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:}" method=GET request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:18:44+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:18:45+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:19:21+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:19:22+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:20:13+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:20:15+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:21:02+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:22:32+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:22:35+08:00" level=info msg="{Data:{APIOncePW:123} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:}" method=GET request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:39:45+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:39:49+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" err_msg="Key: 'structRequest.UserToken' Error:Field validation for 'UserToken' failed on the 'min' tag" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:40:17+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" err_msg="Key: 'structRequest.UserToken' Error:Field validation for 'UserToken' failed on the 'min' tag" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:40:19+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" err_msg="Key: 'structRequest.UserToken' Error:Field validation for 'UserToken' failed on the 'min' tag" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:40:28+08:00" level=info msg="{Data:{APIOncePW:123} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:----------------------------002277814048501094413336\r\nContent-Disposition: form-data; name=\"userToken\"\r\n\r\n1222aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\n----------------------------002277814048501094413336\r\nContent-Disposition: form-data; name=\"version\"\r\n\r\n1222\r\n----------------------------002277814048501094413336--\r\n}" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:40:35+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" err_msg="strconv.ParseInt: parsing \"1222a\": invalid syntax" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:41:40+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:42:26+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:42:27+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:42:29+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" err_msg="strconv.ParseInt: parsing \"1222a\": invalid syntax" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:43:38+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:43:42+08:00" level=info msg="{Data:<nil> Result:{Status:true Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:43:52+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:44:43+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" err_msg="strconv.ParseInt: parsing \"1222a\": invalid syntax" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:45:54+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:46:57+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T16:47:06+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:3001 Message:沒有正確給予Token}}" body="{Reader:----------------------------308842391472260478712295\r\nContent-Disposition: form-data; name=\"userToken\"\r\n\r\n1222aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\r\n----------------------------308842391472260478712295\r\nContent-Disposition: form-data; name=\"version\"\r\n\r\n1222a\r\n----------------------------308842391472260478712295--\r\n}" err_msg= method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T16:56:02+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:00:37+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:07:47+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:09:02+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:1003 Message:必填、不可填的參數有誤}}" body="<nil>" err_msg="strconv.ParseInt: parsing \"1222a\": invalid syntax" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T17:09:22+08:00" level=info msg="{Data:{APIOncePW:123} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:----------------------------685533453732341625209370\r\nContent-Disposition: form-data; name=\"userToken\"\r\n\r\ndf7f740a-e996-11e9-8384-06c29ecdd9be\r\n----------------------------685533453732341625209370\r\nContent-Disposition: form-data; name=\"version\"\r\n\r\n1\r\n----------------------------685533453732341625209370--\r\n}" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T17:15:52+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:19:48+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:19:49+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:20:04+08:00" level=error msg="{Data:<nil> Result:{Status:false Code:9003 Message:修改DB資料錯誤回報}}" body="{Reader:----------------------------517097766640489089777164\r\nContent-Disposition: form-data; name=\"userToken\"\r\n\r\ndf7f740a-e996-11e9-8384-06c29ecdd9be\r\n----------------------------517097766640489089777164\r\nContent-Disposition: form-data; name=\"version\"\r\n\r\n1\r\n----------------------------517097766640489089777164--\r\n}" err_msg="Error 1054: Unknown column 'user_id' in 'where clause'" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T17:20:16+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:20:17+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:20:21+08:00" level=info msg="{Data:{APIOncePW:123} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:----------------------------768546214912768995958149\r\nContent-Disposition: form-data; name=\"userToken\"\r\n\r\ndf7f740a-e996-11e9-8384-06c29ecdd9be\r\n----------------------------768546214912768995958149\r\nContent-Disposition: form-data; name=\"version\"\r\n\r\n1\r\n----------------------------768546214912768995958149--\r\n}" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T17:21:13+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:21:14+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:21:18+08:00" level=info msg="{Data:{APIOncePW:123} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:----------------------------825536472566843165795881\r\nContent-Disposition: form-data; name=\"userToken\"\r\n\r\ndf7f740a-e996-11e9-8384-06c29ecdd9be\r\n----------------------------825536472566843165795881\r\nContent-Disposition: form-data; name=\"version\"\r\n\r\n1\r\n----------------------------825536472566843165795881--\r\n}" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T17:21:37+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:21:38+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:23:32+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:23:50+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:24:00+08:00" level=info msg="{Data:{APIOncePW:01bfd976-7fc4-11ea-857b-acde48001122} Result:{Status:true Code:2000 Message:正確狀況}}" body="{Reader:----------------------------678530297829585585107009\r\nContent-Disposition: form-data; name=\"userToken\"\r\n\r\ndf7f740a-e996-11e9-8384-06c29ecdd9be\r\n----------------------------678530297829585585107009\r\nContent-Disposition: form-data; name=\"version\"\r\n\r\n1\r\n----------------------------678530297829585585107009--\r\n}" method=POST request_ip=127.0.0.1 url=/system/create_once_pw/
+time="2020-04-16T17:25:05+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:25:06+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
+time="2020-04-16T17:25:11+08:00" level=info msg="===== Start Server ===== " env=dev ip=127.0.0.1/8 port=":7788"
