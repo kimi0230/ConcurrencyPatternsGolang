@@ -15,6 +15,7 @@ Concurrency in Go 筆記
 09. [the tee channel](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/the-tee-channel)
 10. [queuing](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/queuing)
 11. [the context package](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/the-context-package)
+12. [heartbeats](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/heartbeats)
 
 
 ## Share memory by communicating, don’t communicate by sharing memory.
