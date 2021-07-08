@@ -4,8 +4,6 @@ Concurrency in Go 筆記
 
 ![](https://learning.oreilly.com/library/cover/9781491941294/250w/)
 
-https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/
-
 01. [confinement (約束)](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/confinement)
 02. [for select loop](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/for-select-loop)
 03. [preventing goroutine leaks](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/preventing-goroutine-leaks)
@@ -18,6 +16,10 @@ https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/
 10. [queuing](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/queuing)
 11. [the context package](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/the-context-package)
 
+
+## Share memory by communicating, don’t communicate by sharing memory.
+![](https://github.com/kimi0230/ConcurrencyPatternsGolang/blob/master/asset/decision_tree.png)
 ## Resource
+* https://www.oreilly.com/library/view/concurrency-in-go/9781491941294/
 * https://github.com/kat-co/concurrency-in-go-src
 * https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-context/
