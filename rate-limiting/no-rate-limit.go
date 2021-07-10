@@ -2,8 +2,8 @@ package rateLimiter
 
 import (
 	"context"
+	"io/ioutil"
 	"log"
-	"os"
 	"sync"
 	"time"
 )
@@ -26,8 +26,8 @@ func (a *APIConnection) ResolveAddress(context.Context) error {
 
 func (a *APIConnection) DemoFunc() {
 	defer log.Printf("Done.")
-	log.SetOutput(os.Stdout)
-	// log.SetOutput(ioutil.Discard)
+	// log.SetOutput(os.Stdout)
+	log.SetOutput(ioutil.Discard)
 	log.SetFlags(log.Ltime | log.LUTC)
 
 	var wg sync.WaitGroup

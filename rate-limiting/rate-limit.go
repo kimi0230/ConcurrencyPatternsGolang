@@ -10,7 +10,7 @@ import (
 
 func OpenRateLimit() *RateLimitAPIConnection {
 	return &RateLimitAPIConnection{
-		rateLimiter: rate.NewLimiter(rate.Limit(1000000), 1),
+		rateLimiter: rate.NewLimiter(rate.Limit(1000000), 50000),
 	}
 }
 

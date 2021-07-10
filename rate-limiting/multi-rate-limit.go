@@ -13,8 +13,8 @@ func Per(eventCount int, duration time.Duration) rate.Limit {
 }
 
 func OpenMultiRateLimit() *MultiRateLimitAPIConnection {
-	secondLimit := rate.NewLimiter(Per(2, time.Second), 1)   // <1>
-	minuteLimit := rate.NewLimiter(Per(10, time.Minute), 10) // <2>
+	secondLimit := rate.NewLimiter(Per(2, time.Second), 1)   // <1> 限制一秒兩個請求
+	minuteLimit := rate.NewLimiter(Per(10, time.Minute), 10) // <2> 限制一分鐘十個請求
 	return &MultiRateLimitAPIConnection{
 		rateLimiter: MultiLimiter(secondLimit, minuteLimit), // <3>
 	}
