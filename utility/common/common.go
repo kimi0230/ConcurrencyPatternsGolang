@@ -49,3 +49,34 @@ func Take(done <-chan interface{}, valueStream <-chan interface{}, num int) <-ch
 	}()
 	return takeStream
 }
+
+func Or(channels ...<-chan interface{}) <-chan interface{} {
+	var or func(channels ...<-chan interface{}) <-chan interface{}
+	switch len(channels) {
+	case 0: // <2>
+		return nil
+	case 1: // <3>
+		return channels[0]
+	}
+
+	orDone := make(chan interface{})
+	go func() { // <4>
+		defer close(orDone)
+
+		switch len(channels) {
+		case 2: // <5>
+			select {
+			case <-channels[0]:
+			case <-channels[1]:
+			}
+		default: // <6>
+			select {
+			case <-channels[0]:
+			case <-channels[1]:
+			case <-channels[2]:
+			case <-or(append(channels[3:], orDone)...): // <6>
+			}
+		}
+	}()
+	return orDone
+}
