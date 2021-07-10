@@ -16,7 +16,7 @@ Concurrency in Go 筆記
 10. [queuing](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/queuing)
 11. [the context package](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/the-context-package)
 12. [heartbeats](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/heartbeats)
-
+13. [rate limit](https://github.com/kimi0230/ConcurrencyPatternsGolang/tree/master/rate-limit)
 
 ## Share memory by communicating, don’t communicate by sharing memory.
 ![](https://github.com/kimi0230/ConcurrencyPatternsGolang/blob/master/asset/decision_tree.png)
