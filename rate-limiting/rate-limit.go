@@ -1,7 +1,8 @@
-package sample
+package rateLimiter
 
 import (
 	"context"
+	"fmt"
 	"time"
 
 	"golang.org/x/time/rate"
@@ -9,7 +10,7 @@ import (
 
 func OpenRateLimit() *RateLimitAPIConnection {
 	return &RateLimitAPIConnection{
-		rateLimiter: rate.NewLimiter(rate.Limit(1), 1),
+		rateLimiter: rate.NewLimiter(rate.Limit(1000000), 1),
 	}
 }
 
@@ -20,18 +21,20 @@ type RateLimitAPIConnection struct {
 
 func (a *RateLimitAPIConnection) ReadFile(ctx context.Context) error {
 	if err := a.rateLimiter.Wait(ctx); err != nil { // <2>
+		fmt.Println(err)
 		return err
 	}
 	// Pretend we do work here
-	time.Sleep(100 * time.Microsecond)
+	time.Sleep(300 * time.Microsecond)
 	return nil
 }
 
 func (a *RateLimitAPIConnection) ResolveAddress(ctx context.Context) error {
 	if err := a.rateLimiter.Wait(ctx); err != nil { // <2>
+		fmt.Println(err)
 		return err
 	}
 	// Pretend we do work here
-	time.Sleep(100 * time.Microsecond)
+	time.Sleep(300 * time.Microsecond)
 	return nil
 }

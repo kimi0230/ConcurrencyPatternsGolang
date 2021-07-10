@@ -1,9 +1,9 @@
-package sample
+package rateLimiter
 
 import (
 	"context"
-	"io/ioutil"
 	"log"
+	"os"
 	"sync"
 	"time"
 )
@@ -13,7 +13,9 @@ type IAPIConnection interface {
 	ResolveAddress(context.Context) error
 	DemoFunc()
 }
-type APIConnection struct{}
+type APIConnection struct {
+	conn IAPIConnection
+}
 
 func (a *APIConnection) ReadFile(context.Context) error {
 	return nil
@@ -24,8 +26,8 @@ func (a *APIConnection) ResolveAddress(context.Context) error {
 
 func (a *APIConnection) DemoFunc() {
 	defer log.Printf("Done.")
-	// log.SetOutput(os.Stdout)
-	log.SetOutput(ioutil.Discard)
+	log.SetOutput(os.Stdout)
+	// log.SetOutput(ioutil.Discard)
 	log.SetFlags(log.Ltime | log.LUTC)
 
 	var wg sync.WaitGroup
@@ -33,7 +35,7 @@ func (a *APIConnection) DemoFunc() {
 	for i := 0; i < 10; i++ {
 		go func() {
 			defer wg.Done()
-			err := a.ReadFile(context.Background())
+			err := a.conn.ReadFile(context.Background())
 			if err != nil {
 				log.Printf("cannot ReadFile: %v", err)
 			}
@@ -44,7 +46,7 @@ func (a *APIConnection) DemoFunc() {
 	for i := 0; i < 10; i++ {
 		go func() {
 			defer wg.Done()
-			err := a.ResolveAddress(context.Background())
+			err := a.conn.ResolveAddress(context.Background())
 			if err != nil {
 				log.Printf("cannot ResolveAddress: %v", err)
 			}
@@ -65,12 +67,12 @@ type NoRateLimitAPIConnection struct {
 
 func (a *NoRateLimitAPIConnection) ReadFile(ctx context.Context) error {
 	// Pretend we do work here
-	time.Sleep(100 * time.Microsecond)
+	time.Sleep(300 * time.Microsecond)
 	return nil
 }
 
 func (a *NoRateLimitAPIConnection) ResolveAddress(ctx context.Context) error {
 	// Pretend we do work here
-	time.Sleep(100 * time.Microsecond)
+	time.Sleep(300 * time.Microsecond)
 	return nil
 }
